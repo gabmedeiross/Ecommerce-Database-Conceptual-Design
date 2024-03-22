@@ -41,3 +41,7 @@ ambas, e a quantidade de produtos disponíveis para venda.
 
 - Outras entidades como: Entrega, Transportador, Tipo de Pagamento
 e Detalhes do cartão também contemplarão o cenário.
+
+
+
+#**SGBD Utilizado para criação de diagrama: MySQL**
