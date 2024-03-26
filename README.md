@@ -1,4 +1,4 @@
-## Projeto de banco de dados Ecommerce
+## Projeto conceitual de banco de dados Ecommerce
 
 **Venda de produtos**
 
