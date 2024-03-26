@@ -1,18 +1,28 @@
 use ecommerce;
 
+## Persistindo dados em cliente
+	
 ## Inserindo cliente no bd
 insert into cliente (Cod_Cliente,Nome,Sobre_Nome,CPF,Endereço,Telefone,Email,Estado,Data_Nascimento)
 values (1,'Gabriel','Medeiros dos Santos','06197999647','Rua Ademar Moreira', '21969655145','gabriel.med25@gmail','Rio de Janeiro,RJ', '2000-04-10');
 
+## Persistindo dados em fornecedor
+
 ##inserindo fornecedor
 insert into fornecedor values (1, 'EletroFarms', '22.879.701/0001-85', '21969655422', 'Rio de Janeiro, RJ', 1);
 
+## Persistindo dados em produto
+	
 ##inserindo produto
 insert into produto values (1, 'Eletronico', 'Notebook Inspiron 15', 2599.00 , 1);
 
+## Persistindo dados em pedido
+	
 ##inserindo novo pedido
 insert into pedido values (1, 'Em Analise',now(),'Notebook',1,1 );
 
+## Persistindo dados em forma de pagamento
+	
 ##inserindo forma de pagamento no cartão de credito
 insert into tipo_de_pagamento values (1,'Cartão de Crédito', '12', 1);
 insert into detalhes_do_cartao values (1, '5141110655910384', '08/2028', 1, 'Lydia Torres', '091.785.700-34' );
@@ -38,7 +48,7 @@ update pedido
 set status_pedido = 'APROVADO'
 where Cliente_Codcliente = 1;
 
-##executando view para visualizar os dados atuaalizados
+##executando view para visualizar os dados atualizados
 select * from cliente_produto_fornecedor;
 
 ## visualizando cliente, pedido, forma de pagamento
